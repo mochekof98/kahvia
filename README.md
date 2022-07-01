@@ -1,7 +1,7 @@
 # kahvia
 
 UAS
-
+Kahvia Coffee
 A new Flutter project.
 
 ## Getting Started
