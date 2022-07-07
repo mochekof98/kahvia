@@ -1,4 +1,4 @@
-#Fri Jul 01 07:34:22 WIB 2022
+#Thu Jul 07 15:37:56 WIB 2022
 base.0=/home/mochekof/kahvia/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex
