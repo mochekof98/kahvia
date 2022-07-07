@@ -74,18 +74,21 @@ class HomePage extends StatelessWidget {
                       const TabBar(
                         labelColor: Colors.black,
                         labelStyle: TextStyle(
-                            fontWeight: FontWeight.normal, fontSize: 17),
-                        indicatorSize: TabBarIndicatorSize.label,
+                            fontWeight: FontWeight.normal, fontSize: 15),
+                        indicatorSize: TabBarIndicatorSize.tab,
                         indicatorColor: Colors.transparent,
                         tabs: <Widget>[
                           Tab(
+                            icon: Icon(Icons.coffee),
                             child: Text("Hot Coffee"),
                           ),
                           Tab(
                             child: Text("Cold Coffee"),
+                            icon: Icon(Icons.icecream),
                           ),
                           Tab(
                             child: Text("Sandwiches"),
+                            icon: Icon(Icons.breakfast_dining),
                           ),
                         ],
                       ),
@@ -94,7 +97,7 @@ class HomePage extends StatelessWidget {
                       ),
                       Padding(
                         padding: const EdgeInsets.only(
-                            left: 20, right: 20, bottom: 5),
+                            left: 20, right: 20, bottom: 7),
                         child: TextField(
                           decoration: InputDecoration(
                               contentPadding:
@@ -114,7 +117,7 @@ class HomePage extends StatelessWidget {
                         ),
                       ),
                       SizedBox(
-                        height: height * 0.3,
+                        height: height * 0.6,
                         child: const TabBarView(
                           children: <Widget>[
                             HotPage(),
