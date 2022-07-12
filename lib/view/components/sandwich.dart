@@ -1,7 +1,7 @@
 import 'package:kahvia/model/sandwichModel.dart';
 import 'package:flutter/material.dart';
 
-import 'menuItemcard.dart';
+import 'menuItemcard3.dart';
 
 class SandwichPage extends StatelessWidget {
   const SandwichPage({Key? key}) : super(key: key);
@@ -11,7 +11,7 @@ class SandwichPage extends StatelessWidget {
     return ListView.builder(
         itemCount: menu.length,
         itemBuilder: (context, int key) {
-          return MenuItemCard(
+          return MenuItemCard3(
             index: key,
           );
         });

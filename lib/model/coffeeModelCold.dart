@@ -1,3 +1,4 @@
+// ignore: file_names
 class Coffee {
   final String name;
   final String type;

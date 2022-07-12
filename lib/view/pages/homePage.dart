@@ -36,8 +36,8 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
                 Positioned(
-                  bottom: 90,
-                  left: 20,
+                  bottom: 40,
+                  left: 80,
                   child: RichText(
                     text: const TextSpan(
                         text: "Enjoy",
@@ -71,29 +71,8 @@ class HomePage extends StatelessWidget {
                   length: 3,
                   child: Column(
                     children: <Widget>[
-                      const TabBar(
-                        labelColor: Colors.black,
-                        labelStyle: TextStyle(
-                            fontWeight: FontWeight.normal, fontSize: 15),
-                        indicatorSize: TabBarIndicatorSize.tab,
-                        indicatorColor: Colors.transparent,
-                        tabs: <Widget>[
-                          Tab(
-                            icon: Icon(Icons.coffee),
-                            child: Text("Hot Coffee"),
-                          ),
-                          Tab(
-                            child: Text("Cold Coffee"),
-                            icon: Icon(Icons.icecream),
-                          ),
-                          Tab(
-                            child: Text("Sandwiches"),
-                            icon: Icon(Icons.breakfast_dining),
-                          ),
-                        ],
-                      ),
                       const SizedBox(
-                        height: 5,
+                        height: 0.5,
                       ),
                       Padding(
                         padding: const EdgeInsets.only(
@@ -117,7 +96,7 @@ class HomePage extends StatelessWidget {
                         ),
                       ),
                       SizedBox(
-                        height: height * 0.6,
+                        height: height * 0.57,
                         child: const TabBarView(
                           children: <Widget>[
                             HotPage(),
@@ -125,7 +104,28 @@ class HomePage extends StatelessWidget {
                             SandwichPage(),
                           ],
                         ),
-                      )
+                      ),
+                      const TabBar(
+                        labelColor: Colors.black,
+                        labelStyle: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 12),
+                        indicatorSize: TabBarIndicatorSize.tab,
+                        indicatorColor: Colors.transparent,
+                        tabs: <Widget>[
+                          Tab(
+                            icon: Icon(Icons.coffee),
+                            child: Text("Hot Coffee"),
+                          ),
+                          Tab(
+                            icon: Icon(Icons.icecream),
+                            child: Text("Cold Coffee"),
+                          ),
+                          Tab(
+                            icon: Icon(Icons.breakfast_dining),
+                            child: Text("Sandwiches"),
+                          ),
+                        ],
+                      ),
                     ],
                   ),
                 ),

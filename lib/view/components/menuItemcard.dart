@@ -1,4 +1,3 @@
-// ignore: file_names
 import 'package:kahvia/model/coffeeModelHot.dart';
 import 'package:kahvia/view/pages/detailPage.dart';
 import 'package:flutter/material.dart';
